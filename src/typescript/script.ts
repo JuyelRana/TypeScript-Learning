@@ -1,5 +1,5 @@
-let playerName : string = "Juyel Rana";
-
-let age : number = 34;
-
-console.log(playerName, age);
+let playerName;
+console.log(playerName);
+playerName = "Juyel Rana";
+playerName = 26;
+console.log(playerName)

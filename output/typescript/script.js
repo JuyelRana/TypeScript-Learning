@@ -1,4 +1,6 @@
 "use strict";
-var playerName = "Juyel Rana";
-var age = 34;
-console.log(playerName, age);
+var playerName;
+console.log(playerName);
+playerName = "Juyel Rana";
+playerName = 26;
+console.log(playerName);
