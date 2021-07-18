@@ -1,5 +1,5 @@
 "use strict";
-var multiply = function (a, b) {
-    return a * b;
-};
-console.log(multiply(6, 5));
+// array
+var fruits = ['Orange', 'Banana', 'Apple'];
+fruits.push('Mango');
+console.log(fruits.map(function (e) { return e.toUpperCase(); }));

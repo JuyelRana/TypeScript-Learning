@@ -1,5 +1,6 @@
-let multiply = (a:number, b: number)=>{
-    return a * b;
-}
+// array
 
-console.log(multiply(6,5));
+let fruits = ['Orange', 'Banana', 'Apple'];
+fruits.push('Mango');
+
+console.log(fruits.map((e) => e.toUpperCase()));
