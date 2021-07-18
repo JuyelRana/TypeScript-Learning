@@ -1,6 +1,7 @@
 // array
 
-let fruits = ['Orange', 'Banana', 'Apple'];
-fruits.push('Mango');
+let fruits = [];
+fruits.push(34);
+fruits.push("Banana");
+console.log(fruits);
 
-console.log(fruits.map((e) => e.toUpperCase()));

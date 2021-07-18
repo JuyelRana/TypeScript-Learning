@@ -1,5 +1,6 @@
 "use strict";
 // array
-var fruits = ['Orange', 'Banana', 'Apple'];
-fruits.push('Mango');
-console.log(fruits.map(function (e) { return e.toUpperCase(); }));
+var fruits = [];
+fruits.push(34);
+fruits.push("Banana");
+console.log(fruits);
