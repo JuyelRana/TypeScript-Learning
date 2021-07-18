@@ -1,5 +1,5 @@
-let multiply = (a, b)=>{
+let multiply = (a:number, b: number)=>{
     return a * b;
 }
 
-console.log(multiply(3,5));
+console.log(multiply(6,5));
