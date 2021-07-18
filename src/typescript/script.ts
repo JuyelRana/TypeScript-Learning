@@ -1,7 +1,9 @@
-// array
+// object
+let person = {
+    name: "Rafia",
+    age: 26,
+    occupation: "craft instructor",
+    isMarried: false
+}
 
-let fruits = [];
-fruits.push(34);
-fruits.push("Banana");
-console.log(fruits);
-
+console.log(person);

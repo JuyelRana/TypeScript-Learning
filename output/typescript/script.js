@@ -1,6 +1,9 @@
 "use strict";
-// array
-var fruits = [];
-fruits.push(34);
-fruits.push("Banana");
-console.log(fruits);
+// object
+var person = {
+    name: "Rafia",
+    age: 26,
+    occupation: "craft instructor",
+    isMarried: false
+};
+console.log(person);
