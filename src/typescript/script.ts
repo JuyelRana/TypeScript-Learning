@@ -1,5 +1,5 @@
-let playerName;
-console.log(playerName);
-playerName = "Juyel Rana";
-playerName = 26;
-console.log(playerName)
+let multiply = (a, b)=>{
+    return a * b;
+}
+
+console.log(multiply(3,5));

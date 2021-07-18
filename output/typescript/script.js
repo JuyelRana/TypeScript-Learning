@@ -1,6 +1,5 @@
 "use strict";
-var playerName;
-console.log(playerName);
-playerName = "Juyel Rana";
-playerName = 26;
-console.log(playerName);
+var multiply = function (a, b) {
+    return a * b;
+};
+console.log(multiply(3, 5));
