@@ -1,7 +1,8 @@
 "use strict";
-var myRafi;
-myRafi = function (name, age, occupation, isMarried) {
-    if (isMarried === void 0) { isMarried = false; }
-    return name + " " + age + " " + occupation + " " + isMarried;
+var userDetails = function (id, user) {
+    console.log("User id is " + id + ", name is " + user.name + " age is " + user.age + " occupation " + user.occupation + " and marital status " + (user.isMarried ? "Married" : "UnMarried"));
 };
-console.log(myRafi('Rafia Rahman', 26, 'Craft Intsructor'));
+var helloUser = function (user) {
+    console.log("Hello " + (user.age > 30 ? "Sir" : "Mr. ") + " " + user.name + " ");
+};
+userDetails(1302058, { name: 'Rafia', age: 26, occupation: 'Craft Instructor', isMarried: false });
