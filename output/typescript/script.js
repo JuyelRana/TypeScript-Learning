@@ -1,25 +1,24 @@
 "use strict";
-// array
-// union types
-var a = [];
-a.push('1');
-a.push(12);
+// Any type variables
+var a;
+a = 20;
+a = {
+    name: 'Rafia',
+    age: a,
+    occupation: 'Craft Instructor',
+    isMarried: false
+};
 console.log(a);
-// union types
-var b;
-b = 5;
-console.log(b);
-b = 'Sagun';
-console.log(b);
-// Object Types
-var c;
-c = {
+a = "Juyel Rana";
+console.log(a);
+var b = [];
+b.push(1);
+b.push('Rafia');
+b.push(26);
+b.push({
     name: 'Rafia',
     age: 26,
     occupation: 'Craft Instructor',
     isMarried: false
-};
-console.log(c);
-var d;
-d = [1, 2, 3, 4, 5];
-console.log(d);
+});
+console.log(b);

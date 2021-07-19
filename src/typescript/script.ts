@@ -1,38 +1,33 @@
-// array
-// union types
-let a: (string | number)[] = [];
+// Any type variables
+let a: any;
 
-a.push('1');
-a.push(12);
+a = 20;
 
-console.log(a);
 
-// union types
-let b: (string | number);
-b = 5;
-console.log(b);
-b = 'Sagun';
-console.log(b);
-
-// Object Types
-let c: {
-    name: string,
-    age: number,
-    occupation: string,
-    isMarried: boolean
-};
-
-c = {
+a = {
     name: 'Rafia',
-    age: 26,
+    age: a,
     occupation: 'Craft Instructor',
     isMarried: false
 }
 
-console.log(c);
+console.log(a);
 
-let d: object;
+a = "Juyel Rana";
 
-d = [1, 2, 3, 4, 5];
+console.log(a);
 
-console.log(d);
+
+let b: any[] = [];
+
+b.push(1);
+b.push('Rafia');
+b.push(26);
+b.push({
+    name: 'Rafia',
+    age: 26,
+    occupation: 'Craft Instructor',
+    isMarried: false
+});
+
+console.log(b);
