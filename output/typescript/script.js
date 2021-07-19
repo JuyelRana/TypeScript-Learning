@@ -1,8 +1,21 @@
 "use strict";
-var userDetails = function (id, user) {
-    console.log("User id is " + id + ", name is " + user.name + " age is " + user.age + " occupation " + user.occupation + " and marital status " + (user.isMarried ? "Married" : "UnMarried"));
+var add;
+add = function (a, b) {
+    return a + b;
 };
-var helloUser = function (user) {
-    console.log("Hello " + (user.age > 30 ? "Sir" : "Mr. ") + " " + user.name + " ");
+console.log(add(12, 13));
+var calc;
+calc = function (a, b, c) {
+    if (c === 'add') {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
 };
-userDetails(1302058, { name: 'Rafia', age: 26, occupation: 'Craft Instructor', isMarried: false });
+console.log(calc(5, 4, 'add'));
+var userInfo;
+userInfo = function (id, user) {
+    console.log(id, user);
+};
+userInfo(1302058, { name: 'Rafia', age: 26 });

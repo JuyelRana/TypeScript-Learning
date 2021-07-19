@@ -1,17 +1,33 @@
-type stringOrNumber = string | number;
-type userType = { name: string, age: number, occupation: string, isMarried: boolean };
+let add: (a: number, b: number) => number;
 
+add = (a: number, b: number) => {
+    return a + b;
+}
+console.log(add(12, 13));
 
-const userDetails = (
-    id: stringOrNumber,
-    user: userType
-) => {
-    console.log(`User id is ${id}, name is ${user.name} age is ${user.age} occupation ${user.occupation} and marital status ${user.isMarried ? "Married" : "UnMarried"}`)
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (a, b, c) => {
+    if (c === 'add') {
+        return a + b;
+    } else {
+        return a - b;
+    }
 }
 
-const helloUser = (user: userType) => {
-    console.log(`Hello ${user.age > 30 ? "Sir" : "Mr. "} ${user.name} `)
+console.log(calc(5, 4, 'add'));
+
+
+let userInfo: (id: (number | string), user: {
+    name: string,
+    age: number,
+    occupation?: string,
+    isMarried?: boolean
+}) => void;
+
+userInfo = (id, user) => {
+    console.log(id, user);
 }
 
-userDetails(1302058, {name: 'Rafia', age: 26, occupation: 'Craft Instructor', isMarried: false});
+userInfo(1302058, {name: 'Rafia', age: 26});
 
