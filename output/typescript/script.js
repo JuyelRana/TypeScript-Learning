@@ -11,9 +11,9 @@ var Player = /** @class */ (function () {
     return Player;
 }());
 var rafia = new Player('Rafia', 26, 'Bangladesh');
-// rafia.play();
+rafia.play();
 var lamia = new Player('Lamia', 45, 'Japan');
-// lamia.play();
+// lamia.country = 'usa';
 var players = [];
 players.push(rafia, lamia);
 console.log(players[0].name);

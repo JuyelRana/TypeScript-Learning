@@ -1,12 +1,8 @@
 class Player {
-    name: string;
-    age: number;
-    country: string;
-
-    constructor(name: string, age: number, country: string) {
-        this.name = name;
-        this.age = age;
-        this.country = country
+    constructor(
+        private name: string,
+        public age: number,
+        protected country: string) {
     }
 
     play() {
@@ -16,9 +12,9 @@ class Player {
 }
 
 const rafia = new Player('Rafia', 26, 'Bangladesh');
-// rafia.play();
+rafia.play();
 const lamia = new Player('Lamia', 45, 'Japan');
-// lamia.play();
+// lamia.country = 'usa';
 
 const players: Player[] = [];
 players.push(rafia, lamia);
