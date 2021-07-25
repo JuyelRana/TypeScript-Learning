@@ -1,21 +1,19 @@
 "use strict";
-var add;
-add = function (a, b) {
-    return a + b;
-};
-console.log(add(12, 13));
-var calc;
-calc = function (a, b, c) {
-    if (c === 'add') {
-        return a + b;
+var Player = /** @class */ (function () {
+    function Player(name, age, country) {
+        this.name = name;
+        this.age = age;
+        this.country = country;
     }
-    else {
-        return a - b;
-    }
-};
-console.log(calc(5, 4, 'add'));
-var userInfo;
-userInfo = function (id, user) {
-    console.log(id, user);
-};
-userInfo(1302058, { name: 'Rafia', age: 26 });
+    Player.prototype.play = function () {
+        console.log(this.name + " from " + this.country + " is playing!");
+    };
+    return Player;
+}());
+var rafia = new Player('Rafia', 26, 'Bangladesh');
+// rafia.play();
+var lamia = new Player('Lamia', 45, 'Japan');
+// lamia.play();
+var players = [];
+players.push(rafia, lamia);
+console.log(players[0].name);
